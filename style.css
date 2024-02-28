@@ -102,7 +102,6 @@ section{
     width: 100vw;
     padding-left: 100px;
     border-radius: 55px;
-    
 }
 
 
@@ -248,7 +247,7 @@ span{
 .skills h1{
     text-align: center;
     color: red;
-    font-size: 4rem;
+    font-size: 2.8rem;
 }
 
 /* .skill-layer{
@@ -256,6 +255,7 @@ span{
 } */
 
 .skill-container{
+    background: #dfa9a9;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -263,13 +263,14 @@ span{
     align-items: center;
     justify-content: center;
     transition: all 2s ease-in-out;
+    margin-bottom: 20px;
 }
 
 .skill-box{
-    padding: 10px;
-    width: 200px;
+    margin: 2rem;
+    padding: 8px;
+    width: 150px;
     height: 150px;
-    margin-left: 3vw;
     margin-bottom: 60px;
     border-radius: 50px;
     background: #dfa9a9;
@@ -285,7 +286,6 @@ span{
 
 .skill-box {
     transition: all 1s ease-in-out ;
-    /* animation: slideIn 2s forwards;  */
 }
 
 .skill-box:hover{
@@ -436,7 +436,7 @@ span{
 /* contact */
 .contact{
     background: #dfa9a9;
-    
+    height: 100vh;
 }
 
 .contact > h1{
@@ -452,9 +452,7 @@ span{
 }
 
 .contactme{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 100%;
+    width: 90vw;
     height: 60vh;
     margin-top: 40px;
     display: flex;
@@ -462,7 +460,6 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     color: #333;
     background: #dfa9a9;
     border-radius: 13px;
@@ -663,6 +660,10 @@ span{
 }
 
 @media(max-width:617px){
+    #menu_icon{
+        display: block;
+    }
+
 
     .skill-container{
         display: grid;
@@ -687,6 +688,10 @@ span{
 }
 
 @media(max-width:450px){
+    #menu_icon{
+        display: block;
+    }
+
 
     .email{
         font-size: small;
@@ -697,18 +702,23 @@ span{
     .skill-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        overflow-x: hidden;
        }
+       .skill-container{
+        width: 100%;
+       }
+
        .skill-box{
-         width: 180px;
-         height: 100px;
+         width: 150px;
+         height: 80px;
+        
        }
+
 
     html{
         font-size: 50%;
     }
-    .contact form .input-box input{
-        width: 100%;
-    }
+    
     .about_img img{
         width: 90vw;
     }
@@ -721,10 +731,17 @@ span{
 }
 
 @media(max-width:365px){
-    
+
+    #menu_icon{
+        display: block;
+    }
+
 .home_content h1{
     color: red;
     font-size: 3rem;    
+}
+.contactme{
+    width: 100vw;
 }
 
 .linkedinandgithub i{
@@ -739,15 +756,16 @@ span{
         
     }
 
+    .skill-box{
+        padding: 10px;
+        width: 150px;
+        height: 100px;
+        margin-bottom: 60px;
     
-.skill-box{
-    padding: 10px;
-    width: 200px;
-    height: 150px;
-    margin-left: 4vw;
-    margin-bottom: 60px;
+    }    
 
-    /* transition-duration: 0s; */
+    .skill-box>h1{
+        font-size: smaller;
     }
 
     .home_img{
