@@ -692,7 +692,9 @@ span{
     #menu_icon{
         display: block;
     }
-
+    .contactme{
+        margin-left: 5vw;
+    }
 
     .email{
         font-size: small;
