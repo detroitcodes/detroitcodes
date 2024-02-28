@@ -42,16 +42,16 @@ window.onscroll = ()  => {
 
 
 ScrollReveal({
-    reset:true,
-    distance:'150px',
+    // reset:true,
+    distance:'80px',
     duration:2000,
     delay:200,
 });
 
-ScrollReveal().reveal('.home_content, .heading', {origin: 'top'});
+ScrollReveal().reveal('.home_content, .heading, .skill-box', {origin: 'top'});
 ScrollReveal().reveal('.home_img, .services_container, .portfolio-box, .contact form', {origin: 'bottom'});
 ScrollReveal().reveal('.home_content h1, .about_img', {origin: 'left'});
-ScrollReveal().reveal('.home_content p,.skill-box, .about_content', {origin: 'right'});
+ScrollReveal().reveal('.home_content p, .about_content', {origin: 'right'});
 ScrollReveal().reveal('.home_content p, .about_content', {origin: 'right'});
 ScrollReveal().reveal('.social_media>a, .btn', {origin: 'left'});
 
